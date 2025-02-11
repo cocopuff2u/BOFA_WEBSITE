@@ -1,0 +1,77 @@
+name: Update Readmes and Pull Repo Updates
+
+on:
+  schedule:
+    - cron: '0 */1 * * *' # Runs every 1 hour
+  workflow_dispatch:
+
+jobs:
+  combined-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytz
+
+    - name: Run pull_raw_files script
+      run: python repo_raw_data/pull_raw_files.py
+
+    - name: Commit and push changes
+      env:
+        TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      run: |
+        git config --global user.name 'cocopuff2u'
+        git config --global user.email 'cocopuff2u@yahoo.com'
+        git add .
+        git commit -m 'Automated update of raw files'
+        git push https://cocopuff2u:$TOKEN@github.com/cocopuff2u/MOFA_WEBSITE.git main
+
+    - name: Run update scripts
+      run: |
+        python update_readme_scripts/update_standalone_update_history_readme.py
+        python update_readme_scripts/update_standalone_sha256_readme.py
+        python update_readme_scripts/update_standalone_sha1_readme.py
+        python update_readme_scripts/update_standalone_cve_history_readme.py
+        python update_readme_scripts/update_standalone_current_version_readme.py
+        python update_readme_scripts/update_ios_appstore_current_version_readme.py
+        python update_readme_scripts/update_ios_appstore_current_version_readme.py
+        python update_readme_scripts/update_standalone_preview_version_readme.py
+        python update_readme_scripts/update_standalone_preview_sha256_readme.py
+        python update_readme_scripts/update_standalone_preview_sha1_readme.py
+        python update_readme_scripts/update_standalone_beta_version_readme.py
+        python update_readme_scripts/update_standalone_beta_sha256_readme.py
+        python update_readme_scripts/update_standalone_beta_sha1_readme.py
+        python update_readme_scripts/update_macos_appstore_current_version_readme.py
+        python update_readme_scripts/update_ios_appstore_current_version_readme.py
+        python update_readme_scripts/update_mau_rss.py
+
+    - name: Set Git config
+      run: |
+        git config --global user.name 'cocopuff2u'
+        git config --global user.email 'cocopuff2u@yahoo.com'
+
+    - name: Check for changes
+      run: |
+        git status --short
+        if [ -n "$(git status --porcelain)" ]; then
+          git add docs/*.md docs/standalone_apps/*.md docs/macos_appstore/*.md docs/ios_appstore/*.md docs/public/rss_feeds/*.xml
+          git commit -m 'Automated update of README files'
+        else
+          echo "No changes detected, skipping commit."
+        fi
+
+    - name: Push changes
+      env:
+        TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      run: |
+        git push https://cocopuff2u:$TOKEN@github.com/cocopuff2u/mofa_website.git main

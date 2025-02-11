@@ -1,0 +1,182 @@
+last_updated: February 10, 2025 08:05 PM EST
+packages:
+- name: Word
+  application_id: MSWD2019
+  application_name: Microsoft Word.app
+  CFBundleVersion: com.microsoft.word
+  short_version: 16.94.0 (25020927)
+  full_version: 16.94.25020927
+  last_updated: February 09, 2025
+  min_os: '13.0'
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Word_16.94.25020927_Updater.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Word_16.94.25020927_Updater.pkg
+  sha1: 46a58fe302a06ffaf3282d8083d4f86668d33b67
+  sha256: fc0a5f57a0e7e6e3303b0686a7910dd2e77cf2b6ac2416d8b9c451c6cee247fd
+- name: Excel
+  application_id: XCEL2019
+  application_name: Microsoft Excel.app
+  CFBundleVersion: com.microsoft.excel
+  short_version: 16.94.0 (25020927)
+  full_version: 16.94.25020927
+  last_updated: February 09, 2025
+  min_os: '13.0'
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Excel_16.94.25020927_Updater.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Excel_16.94.25020927_Updater.pkg
+  sha1: d9ee88bef431c88a71e432d0a79680ca340a7564
+  sha256: 8d5c21b34e698df5fb09cc3d2529a1f0af6b641583907b3db7f7452dcf7d413b
+- name: PowerPoint
+  application_id: PPT32019
+  application_name: Microsoft PowerPoint.app
+  CFBundleVersion: com.microsoft.powerpoint
+  short_version: 16.94.0 (25020927)
+  full_version: 16.94.25020927
+  last_updated: February 09, 2025
+  min_os: '13.0'
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_PowerPoint_16.94.25020927_Updater.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_PowerPoint_16.94.25020927_Updater.pkg
+  sha1: e473866b9e618404ceb0dd8e4128e1555be9a446
+  sha256: a38e2def764c28cb2883be9aa8b3398a02a3fc3c3f276e34372c361f77cadfd6
+- name: Outlook
+  application_id: OPIM2019
+  application_name: Microsoft Outlook.app
+  CFBundleVersion: com.microsoft.outlook
+  short_version: 16.94.0 (25020927)
+  full_version: 16.94.25020927
+  last_updated: February 09, 2025
+  min_os: '13.0'
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Outlook_16.94.25020927_Updater.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Outlook_16.94.25020927_Updater.pkg
+  sha1: 5a5cc61c103e96facbc49c4a3e09e4cf76e4127a
+  sha256: b7347ea6adb993dd728b669b8eaf600510c2ca4b49bcb3463d6a314d7afbcc58
+- name: OneNote
+  application_id: ONMC2019
+  application_name: Microsoft OneNote.app
+  CFBundleVersion: com.microsoft.onenote
+  short_version: 16.94.0 (25020927)
+  full_version: 16.94.25020927
+  last_updated: February 09, 2025
+  min_os: '13.0'
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_OneNote_16.94.25020927_Updater.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_OneNote_16.94.25020927_Updater.pkg
+  sha1: f183bf0e5f588d905269006fca2279e8ccff117e
+  sha256: 2e57ad240cfb7edb02693bc4764040455a58e4edbb60cf5ab113511d093f1340
+- name: OneDrive
+  application_id: OneDrive.app
+  application_name: OneDrive.app
+  CFBundleVersion: com.microsoft.onedrive
+  short_version: 25.010.0119
+  full_version: '0119.0002'
+  last_updated: February 10, 2025 08:05 PM EST
+  min_os: N/A
+  update_download: https://oneclient.sfx.ms/Mac/Installers/25.010.0119.0002/OneDrive.pkg
+  latest_download: https://oneclient.sfx.ms/Mac/Installers/25.010.0119.0002/OneDrive.pkg
+  sha1: 2cd596db72a0027d75bd477ddd8203b4a313c067
+  sha256: 42b73ad40a331e4d8714c01c7a78ceac71adbdbe111065f778f7767df467b1a4
+- name: Skype
+  application_id: MSFB16
+  application_name: Skype for Business.app
+  CFBundleVersion: com.microsoft.skypeforbusiness
+  short_version: 16.31.8
+  full_version: 16.31.8
+  last_updated: September 03, 2024
+  min_os: 10.14.0
+  update_download: https://officecdn.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/SkypeForBusinessUpdater-16.31.8.pkg
+  latest_download: https://officecdn.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/SkypeForBusinessUpdater-16.31.8.pkg
+  sha1: 07c0135dd184270f3552f69ebbe86c40830b6e48
+  sha256: 6df35785b8d7ceebea300a8bf8c9a02d1ca417ed580724d49375eea7815daad8
+- name: Teams
+  application_id: TEAMS21
+  application_name: Microsoft Teams.app
+  CFBundleVersion: com.microsoft.teams
+  short_version: 25016.1904.3401.2239
+  full_version: 25016.1904.3401.2239
+  last_updated: February 03, 2025
+  min_os: '13.0'
+  update_download: https://statics.teams.cdn.office.net/production-osx/25016.1904.3401.2239/MicrosoftTeams.pkg
+  latest_download: https://statics.teams.cdn.office.net/production-osx/25016.1904.3401.2239/MicrosoftTeams.pkg
+  sha1: f520e9a6dca961220d8618c12facdae27e6d12b4
+  sha256: 63a283bf5a022a221478df5630fb3e2b160bc20f3a7c13f09f350241cbf2b16e
+- name: Intune
+  application_id: IMCP01
+  application_name: Company Portal.app
+  CFBundleVersion: com.microsoft.intune.companyportal
+  short_version: 5.2412.0
+  full_version: 53.2412051.003
+  last_updated: December 14, 2024
+  min_os: '11.0'
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/CompanyPortal_5.2412.0-Upgrade.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/CompanyPortal_5.2412.0-Upgrade.pkg
+  sha1: 1043f0cf0b42122695b39d100c798b0d0be413d7
+  sha256: dc947a26a6dd612999efeedc64dd4f72eb5fd33349efbd1ac5b8fb6da3c5c718
+- name: Edge
+  application_id: EDGE01
+  application_name: Microsoft Edge.app
+  CFBundleVersion: com.microsoft.edgemac
+  short_version: 133.0.3065.59
+  full_version: 133.3065.25020959
+  last_updated: February 10, 2025
+  min_os: '11.0'
+  update_download: https://officecdn-microsoft-com.akamaized.net/pr/03adf619-38c6-4249-95ff-4a01c0ffc962/MacAutoupdate/MicrosoftEdgeUpdate-133.0.3065.59.pkg
+  latest_download: https://officecdn-microsoft-com.akamaized.net/pr/03adf619-38c6-4249-95ff-4a01c0ffc962/MacAutoupdate/MicrosoftEdgeUpdate-133.0.3065.59.pkg
+  sha1: f89347bd496f3f332e8fdd222f87decb35f8e415
+  sha256: bf7b18b7c98ed488ebc8287fe46193a888083be61cc210224e26c6fc833f9035
+- name: Defender For Endpoint
+  application_id: WDAV00
+  application_name: Microsoft Defender.app
+  CFBundleVersion: com.microsoft.defender.endpoint
+  short_version: 101.24122.0005
+  full_version: 101.24122.0005
+  last_updated: January 30, 2025
+  min_os: '12.0'
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/wdav-upgrade.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/wdav-upgrade.pkg
+  sha1: 964f72dbbc5638cfe7f7a9a83d3e66d6cc4fefa4
+  sha256: 0ae407e42b4423090fb1393b28864346c3ce0048de8eccaef058355f213633b2
+- name: Defender For Consumers
+  application_id: WDAVCONSUMER
+  application_name: Microsoft Defender.app
+  CFBundleVersion: com.microsoft.defender.endpoint
+  short_version: 101.24122.0005
+  full_version: 101.24122.0005
+  last_updated: January 30, 2025
+  min_os: '12.0'
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Defender_101.24122.0005_Individuals_Installer.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Defender_101.24122.0005_Individuals_Installer.pkg
+  sha1: 69b96ee67fe026db8f7d1b05d84a4aa37380a921
+  sha256: cb65fc4c1bf805a0ca80e72ab1050010204f26b55cec24727c4d18e6f4fc4793
+- name: Defender Shim
+  application_id: WDAVSHIM
+  application_name: Microsoft Defender.app
+  CFBundleVersion: com.microsoft.defender.endpoint
+  short_version: 101.24080.0001
+  full_version: 101.24080.0001
+  last_updated: October 16, 2024
+  min_os: '12.0'
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Defender_101.24080.0001_Individuals_Shim_Installer.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_Defender_101.24080.0001_Individuals_Shim_Installer.pkg
+  sha1: 5101228ce261cfcc836d093889eef997e8f62dfd
+  sha256: 3c455357808b67ec0ebbed62825e5d7f4652f3f53a1d3d58510e82099981bb51
+- name: Visual
+  application_id: N/A
+  application_name: Visual Studio Code - Insiders.app
+  CFBundleVersion: com.microsoft.VSCodeInsiders
+  short_version: 1.98.0-
+  full_version: 1.98.0-insider
+  last_updated: February 10, 2025
+  min_os: N/A
+  update_download: https://vscode.download.prss.microsoft.com/dbazure/download/insider/32a41e158d04c9777522dc567574f2a74b8f2bf9/VSCode-darwin-universal.zip
+  latest_download: https://code.visualstudio.com/sha/download?build=insider&os=darwin-universal
+  sha1: 096aecbad46313b12ed5f45d0f0a95b670b2dbb0
+  sha256: a1294918b2bc1e7d057b4821ac2a4ade378e3bd8e3f6c7ec5c75697f313a80ae
+- name: MAU
+  application_id: MSau04
+  application_name: Microsoft AutoUpdate.app
+  CFBundleVersion: com.microsoft.autoupdate
+  short_version: 4.77 (24121924)
+  full_version: 4.77.24121924
+  last_updated: December 19, 2024
+  min_os: 10.14.0
+  update_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_AutoUpdate_4.77.24121924_Updater.pkg
+  latest_download: https://officecdnmac.microsoft.com/pr/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/Microsoft_AutoUpdate_4.77.24121924_Updater.pkg
+  sha1: 3159276b4afb2399c7b346147c1a3a464dad8858
+  sha256: c818d32f268dfba316bfaedf27ab3e9224c529d2647454464270f58ebc9db4c7
