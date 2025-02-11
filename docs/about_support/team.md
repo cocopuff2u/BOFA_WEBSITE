@@ -16,11 +16,11 @@ const members = [
 
 const members2 = [
   {
-    avatar: 'https://avatars.githubusercontent.com/u/91097104?v=4',
-    name: 'Darian Garcia',
+    avatar: 'https://avatars.githubusercontent.com/u/95243190?s=96&v=4',
+    name: 'Could Be You',
     title: '💡 Contributor / Moral Support 💡',
     links: [
-      { icon: 'github', link: 'https://github.com/darixn' },
+      { icon: 'github', link: 'https://github.com/' },
     ]
   }
 ]
@@ -45,7 +45,7 @@ We're always looking for passionate people to contribute to the project. Whether
 - Improving & Adding raw data feeds 📊
 - Creating more features for the website 🌐
 
-The data powering this project is pulled from the repository [GitHub.com/cocopuff2u/mofa](https://github.com/cocopuff2u/mofa), and the website is hosted in its own repository at [GitHub.com/cocopuff2u/mofa_website](https://github.com/cocopuff2u/mofa_website).
+The data powering this project is pulled from the repository [GitHub.com/cocopuff2u/BOFA](https://github.com/cocopuff2u/BOFA), and the website is hosted in its own repository at [GitHub.com/cocopuff2u/BOFA_website](https://github.com/cocopuff2u/BOFA_website).
 
 Feel free to fork the repositories and contribute! You can open an issue or submit a pull request once you've made your updates. Let's make something great together! 🎉🚀
 

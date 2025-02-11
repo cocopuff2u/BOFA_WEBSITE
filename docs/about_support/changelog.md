@@ -8,35 +8,25 @@ Welcome to the Changelog! Stay updated on the latest features, fixes, and improv
 
 ## **📌 Current Version**
 
-### **v1.1.0** – *January 2025*
+### **v1.0.0** – *Feburary 2025*
 
-- Added Support for Beta & Preview Versions
+- Offical Release
 
 ## **🌟 Upcoming Features**
 
 ### **🚀 Future Goals**
 
-#### 1. **Add Multilingual Support**
-   - **Target Languages:**  
-      - German (identified via Google Analytics as beneficial for the community).  
-      - Dutch (identified via Google Analytics as beneficial for the community).  
-      - Danish (identified via Google Analytics as beneficial for the community).  
-      - German (identified via Google Analytics as beneficial for the community).  
-      - Spanish (Requested by a user).  
-   - **Requirements:**  
-      - Backend layout adjustments.  
-      - Community collaboration to verify translations and ensure accuracy.  
-   - **Estimated Timeline:** *Early 2025 (pending user feedback)*  
+#### 1. **Add More Browser Support**
 
 #### 2. **Refine Backend Page Layout**
    - **Objective:**  
       - Restructure backend folders to better align with the sidebar organization.  
-   - **Estimated Timeline:** *Early 2025 (pending user feedback)*  
+   - **Estimated Timeline:** *Mid 2025 (pending user feedback)*  
 
 #### 3. **Expand Raw Data Feeds**
    - **Planned Enhancements:**  
       - Integrate additional data sources to broaden available resources.  
-   - **Estimated Timeline:** *Mid 2025 (pending user feedback)*  
+   - **Estimated Timeline:** *Late 2025 (pending user feedback)*  
 
 ## **🎯 Current Updates and Goals**
 
