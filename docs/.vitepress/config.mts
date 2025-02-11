@@ -6,12 +6,12 @@ export default defineConfig({
   description: "Browser Overview Feed for Apple",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-P45L4Y5WFQ' }],
+    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-RQKDJ66BMC' }],
     ['script', {}, `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-P45L4Y5WFQ');
+      gtag('config', 'G-RQKDJ66BMC');
     `]
   ],
   themeConfig: {
