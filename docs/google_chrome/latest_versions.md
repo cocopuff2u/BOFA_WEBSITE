@@ -7,7 +7,7 @@ lastUpdated: false
 
 <span class="extra-small">All links below direct to the official browser vendor. The links provided will always download the latest available version as of the last scan update.</span>
 
-<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">February 17, 2025 01:18 AM EST</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.json) (Automatically Updated every hour)_</span>
+<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">February 17, 2025 02:13 AM EST</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.json) (Automatically Updated every hour)_</span>
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
