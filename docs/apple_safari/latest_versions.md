@@ -7,14 +7,14 @@ lastUpdated: false
 
 <span class="extra-small">Safari comes pre-installed with macOS. Different versions are available for different macOS versions.</span>
 
-<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">March 11, 2025 02:03 PM EDT</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.json) (Automatically Updated every hour)_</span>
+<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">March 11, 2025 03:02 PM EDT</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.json) (Automatically Updated every hour)_</span>
 
 | **macOS Version** | **Safari Version** | **Bundle Identifier** | **Size** | **Download** |
 |------------------|-------------------|----------|----------|------------|
 | **macOS Big Sur** | `16.6.1` | com.apple.Safari | 129.20 MB | <a href="https://swcdn.apple.com/content/downloads/47/04/042-27539-A_JOWCKWG03T/q1askvrrids8ykmi9ok73aqmj05kzskcya/Safari16.6.1BigSurAuto.pkg"><img src="/images/safari.png" alt="Download Safari" width="80"></a> |
 | **macOS Monterey** | `17.6` | com.apple.Safari | 148.80 MB | <a href="https://swcdn.apple.com/content/downloads/19/54/062-47822-A_BHCA3624RA/oixd7i5b8y3g67u6x0upt45m0u2xotc4eh/Safari17.6MontereyAuto.pkg"><img src="/images/safari.png" alt="Download Safari" width="80"></a> |
-| **macOS Ventura** | `18.3` | com.apple.Safari | 171.12 MB | <a href="https://swcdn.apple.com/content/downloads/25/26/072-37121-A_ZC4O3POGUS/zyrvcx8nmioye0dlak2mz4zsedgidau1o3/Safari18.3VenturaAuto.pkg"><img src="/images/safari.png" alt="Download Safari" width="80"></a> |
-| **macOS Sonoma/Sequoia** | `18.3` | com.apple.Safari | 175.02 MB | <a href="https://swcdn.apple.com/content/downloads/09/29/072-37131-A_TB5KELZSTG/yngguudq6uadu4goqvbbroumbqgnpf0q3m/Safari18.3SonomaAuto.pkg"><img src="/images/safari.png" alt="Download Safari" width="80"></a> |
+| **macOS Ventura** | `18.3.1` | com.apple.Safari | 171.11 MB | <a href="https://swcdn.apple.com/content/downloads/40/31/082-05632-A_DU8EI8VNVI/m4gu4h8k7p95qshxoosd2ynmpx9bcwnwkj/Safari18.3.1VenturaAuto.pkg"><img src="/images/safari.png" alt="Download Safari" width="80"></a> |
+| **macOS Sonoma/Sequoia** | `18.3.1` | com.apple.Safari | 175.01 MB | <a href="https://swcdn.apple.com/content/downloads/28/57/082-06250-A_CM81BJNGCG/4bo3ktr97td8tf9pda71rvysnet7kr2wz7/Safari18.3.1SonomaAuto.pkg"><img src="/images/safari.png" alt="Download Safari" width="80"></a> |
 
 ---
 
