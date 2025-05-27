@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 last_updated: May 27, 2025 11:03 AM EDT
+=======
+last_updated: May 27, 2025 12:03 PM EDT
+>>>>>>> 4d3006fccb109b0b5dff4f1adee58d05f012b19c
 release:
 - key: firefox-1.0rc1
   build_number: '1'
