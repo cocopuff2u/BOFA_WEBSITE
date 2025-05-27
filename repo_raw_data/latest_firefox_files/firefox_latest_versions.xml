@@ -1,10 +1,6 @@
 <?xml version='1.0' encoding='utf8'?>
 <latest>
-<<<<<<< HEAD
-  <last_updated>May 27, 2025 11:03 AM EDT</last_updated>
-=======
   <last_updated>May 27, 2025 12:03 PM EDT</last_updated>
->>>>>>> 4d3006fccb109b0b5dff4f1adee58d05f012b19c
   <package>
     <name>Firefox</name>
     <application_name>Mozilla Firefox</application_name>

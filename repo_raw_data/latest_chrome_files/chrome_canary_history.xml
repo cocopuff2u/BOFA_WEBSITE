@@ -1,10 +1,6 @@
 <?xml version="1.0" ?>
 <versions>
-<<<<<<< HEAD
-  <last_updated>May 27, 2025 11:03 AM EDT</last_updated>
-=======
   <last_updated>May 27, 2025 12:03 PM EDT</last_updated>
->>>>>>> 4d3006fccb109b0b5dff4f1adee58d05f012b19c
   <version>
     <name>chrome/platforms/win/channels/canary/versions/138.0.7204.0</name>
     <version>138.0.7204.0</version>
