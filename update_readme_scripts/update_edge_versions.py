@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
 from datetime import datetime
-from pytz import timezone
+from pytz import timezone, utc  # Add this import for timezone handling
 
 def read_edge_xml_value(root, channel, field):
     """Read value from Edge XML for specific channel and field"""
@@ -35,7 +35,8 @@ def get_edge_data(xml_path):
             
             # Parse and format the date to "Month Date, Year"
             try:
-                parsed_date = datetime.strptime(date, "%B %d, %Y %I:%M %p %Z")
+                # Explicitly set UTC timezone for consistent parsing
+                parsed_date = datetime.strptime(date, "%B %d, %Y %I:%M %p %Z").replace(tzinfo=utc)
                 formatted_date = parsed_date.strftime("%B %d, %Y")
             except ValueError:
                 formatted_date = "N/A"
