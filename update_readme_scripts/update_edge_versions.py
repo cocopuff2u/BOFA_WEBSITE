@@ -42,8 +42,9 @@ def get_edge_data(xml_path):
             
             # Parse and format the date to "Month Date, Year"
             try:
-                # Explicitly set UTC timezone for consistent parsing
-                parsed_date = datetime.strptime(date, "%B %d, %Y %I:%M %p %Z").replace(tzinfo=utc)
+                # Remove timezone abbreviation (e.g., 'EDT') before parsing
+                date_without_tz = ' '.join(date.split()[:-1])
+                parsed_date = datetime.strptime(date_without_tz, "%B %d, %Y %I:%M %p")
                 formatted_date = parsed_date.strftime("%B %d, %Y")
             except ValueError as ve:
                 logging.error(f"Error parsing date for channel '{xml_channel}': {ve}")
