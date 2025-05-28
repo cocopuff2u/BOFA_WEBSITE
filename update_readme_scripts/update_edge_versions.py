@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 import os
 from datetime import datetime
 from pytz import timezone, utc  # Add this import for timezone handling
+import logging  # Add logging for debugging
 
 def read_edge_xml_value(root, channel, field):
     """Read value from Edge XML for specific channel and field"""
@@ -13,6 +14,9 @@ def read_edge_xml_value(root, channel, field):
     except Exception as e:
         print(f"Error processing channel {channel}: {str(e)}")
         return "N/A"
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def get_edge_data(xml_path):
     """Get all Edge channel data"""
@@ -33,12 +37,16 @@ def get_edge_data(xml_path):
             location = read_edge_xml_value(root, xml_channel, 'Location')
             date = read_edge_xml_value(root, xml_channel, 'Date')
             
+            # Log the raw date value for debugging
+            logging.debug(f"Raw date for channel '{xml_channel}': {date}")
+            
             # Parse and format the date to "Month Date, Year"
             try:
                 # Explicitly set UTC timezone for consistent parsing
                 parsed_date = datetime.strptime(date, "%B %d, %Y %I:%M %p %Z").replace(tzinfo=utc)
                 formatted_date = parsed_date.strftime("%B %d, %Y")
-            except ValueError:
+            except ValueError as ve:
+                logging.error(f"Error parsing date for channel '{xml_channel}': {ve}")
                 formatted_date = "N/A"
             
             data[f'{script_channel}_version'] = version
@@ -47,7 +55,7 @@ def get_edge_data(xml_path):
         
         return data
     except Exception as e:
-        print(f"Error processing XML: {str(e)}")
+        logging.error(f"Error processing XML: {e}")
         return {k: "N/A" for k in ['stable_version', 'stable_download', 'beta_version', 'beta_download', 
                                   'dev_version', 'dev_download', 'canary_version', 'canary_download']}
 
