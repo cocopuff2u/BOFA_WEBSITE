@@ -7,14 +7,14 @@ lastUpdated: false
 
 <span class="extra-small">All links below direct to the official browser vendor. The links provided will always download the latest available version as of the last scan update.</span>
 
-<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">June 09, 2025 06:03 PM EDT</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_edge_files/edge_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_edge_files/edge_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_edge_files/edge_latest_versions.json) (Automatically Updated every hour)_</span>
+<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">June 09, 2025 07:03 PM EDT</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_edge_files/edge_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_edge_files/edge_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_edge_files/edge_latest_versions.json) (Automatically Updated every hour)_</span>
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
 | **Edge** <br><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" style="text-decoration: none;"><small>_Release Notes_</small></a> <br><br>Last Update:<br>`June 06, 2025` | `137.0.3296.68` | `com.microsoft.edgemac` | <a href="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/881a4aef-792c-4d81-a76f-3cf546510d68/MicrosoftEdge-137.0.3296.68.pkg"><img src="/images/edge.png" alt="Download Edge" width="80"></a> |
 | **Edge** <sup>Beta</sup> <br><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-beta-channel" style="text-decoration: none;"><small>_Release Notes_</small></a> <br><br>Last Update:<br>`June 09, 2025` | `138.0.3351.21` | `com.microsoft.edgemac.beta` | <a href="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/5ef6518b-bfcf-4cc5-b317-9343283cb1b1/MicrosoftEdgeBeta-138.0.3351.21.pkg"><img src="/images/edge_beta.png" alt="Download Edge Beta" width="80"></a> |
 | **Edge** <sup>Dev</sup> <br><br>Last Update:<br>`June 03, 2025` | `138.0.3351.8` | `com.microsoft.edgemac.dev` | <a href="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/e906aa3b-53ea-4031-b7dd-0925178dbb25/MicrosoftEdgeDev-138.0.3351.8.pkg"><img src="/images/edge_dev.png" alt="Download Edge Dev" width="80"></a> |
-| **Edge** <sup>Canary</sup> <br><br>Last Update:<br>`June 09, 2025` | `139.0.3371.0` | `com.microsoft.edgemac.canary` | <a href="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/14a7cdcd-36e4-485c-aae9-94ded239ae3f/MicrosoftEdgeCanary-139.0.3371.0.pkg"><img src="/images/edge_canary.png" alt="Download Edge Canary" width="80"></a> |
+| **Edge** <sup>Canary</sup> <br><br>Last Update:<br>`June 09, 2025` | `139.0.3372.0` | `com.microsoft.edgemac.canary` | <a href="https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/dd8d6e68-c462-4734-80ab-8f52ce75e0fa/MicrosoftEdgeCanary-139.0.3372.0.pkg"><img src="/images/edge_canary.png" alt="Download Edge Canary" width="80"></a> |
 
 ---
 
