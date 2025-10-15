@@ -27,33 +27,24 @@ def get_edge_data(xml_path):
         'dev': 'dev',
         'canary': 'canary'
     }
-    
     try:
         tree = ET.parse(xml_path)
         root = tree.getroot()
-        
         for xml_channel, script_channel in channel_mapping.items():
             version = read_edge_xml_value(root, xml_channel, 'Version')
             location = read_edge_xml_value(root, xml_channel, 'Location')
             date = read_edge_xml_value(root, xml_channel, 'Date')
-            
-            # Log the raw date value for debugging
             logging.debug(f"Raw date for channel '{xml_channel}': {date}")
-            
-            # Parse and format the date to "Month Date, Year"
             try:
-                # Remove timezone abbreviation (e.g., 'EDT') before parsing
                 date_without_tz = ' '.join(date.split()[:-1])
                 parsed_date = datetime.strptime(date_without_tz, "%B %d, %Y %I:%M %p")
                 formatted_date = parsed_date.strftime("%B %d, %Y")
             except ValueError as ve:
                 logging.error(f"Error parsing date for channel '{xml_channel}': {ve}")
                 formatted_date = "N/A"
-            
             data[f'{script_channel}_version'] = version
             data[f'{script_channel}_download'] = location
             data[f'{script_channel}_date'] = formatted_date
-        
         return data
     except Exception as e:
         logging.error(f"Error processing XML: {e}")
@@ -70,6 +61,13 @@ def get_last_updated(xml_path):
     except Exception as e:
         print(f"Error getting last_updated: {str(e)}")
         return "N/A"
+
+def _is_missing_date(value: str) -> bool:
+    """Return True if Date is unavailable or indicates an error."""
+    if not value:
+        return True
+    v = value.strip()
+    return v == "" or v == "N/A" or v.startswith("Error")
 
 def generate_edge_markdown():
     base_path = os.path.dirname(os.path.dirname(__file__))
@@ -90,10 +88,10 @@ lastUpdated: false
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
-| **Edge** <br><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" style="text-decoration: none;"><small>_Release Notes_</small></a> <br><br>Last Update:<br>`{stable_date}` | `{stable_version}` | `com.microsoft.edgemac` | <a href="{stable_download}"><img src="/images/edge.png" alt="Download Edge" width="80"></a> |
-| **Edge** <sup>Beta</sup> <br><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-beta-channel" style="text-decoration: none;"><small>_Release Notes_</small></a> <br><br>Last Update:<br>`{beta_date}` | `{beta_version}` | `com.microsoft.edgemac.beta` | <a href="{beta_download}"><img src="/images/edge_beta.png" alt="Download Edge Beta" width="80"></a> |
-| **Edge** <sup>Dev</sup> <br><br>Last Update:<br>`{dev_date}` | `{dev_version}` | `com.microsoft.edgemac.dev` | <a href="{dev_download}"><img src="/images/edge_dev.png" alt="Download Edge Dev" width="80"></a> |
-| **Edge** <sup>Canary</sup> <br><br>Last Update:<br>`{canary_date}` | `{canary_version}` | `com.microsoft.edgemac.canary` | <a href="{canary_download}"><img src="/images/edge_canary.png" alt="Download Edge Canary" width="80"></a> |
+| **Edge** <br><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel" style="text-decoration: none;"><small>_Release Notes_</small></a>{stable_release_date_block} | `{stable_version}` | `com.microsoft.edgemac` | <a href="{stable_download}"><img src="/images/edge.png" alt="Download Edge" width="80"></a> |
+| **Edge** <sup>Beta</sup> <br><a href="https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-beta-channel" style="text-decoration: none;"><small>_Release Notes_</small></a>{beta_release_date_block} | `{beta_version}` | `com.microsoft.edgemac.beta` | <a href="{beta_download}"><img src="/images/edge_beta.png" alt="Download Edge Beta" width="80"></a> |
+| **Edge** <sup>Dev</sup>{dev_release_date_block} | `{dev_version}` | `com.microsoft.edgemac.dev` | <a href="{dev_download}"><img src="/images/edge_dev.png" alt="Download Edge Dev" width="80"></a> |
+| **Edge** <sup>Canary</sup>{canary_release_date_block} | `{canary_version}` | `com.microsoft.edgemac.canary` | <a href="{canary_download}"><img src="/images/edge_canary.png" alt="Download Edge Canary" width="80"></a> |
 
 ---
 
@@ -110,11 +108,19 @@ View your current browser policies and explore available policy options:
 """
 
     data = get_edge_data(xml_path)
+
+    # Build per-channel release date blocks (gap + small text); hide when missing
+    for channel in ['stable', 'beta', 'dev', 'canary']:
+        dt = data.get(f'{channel}_date')
+        data[f'{channel}_release_date_block'] = (
+            f'<br><br><small>Release Date:<br><em><code>{dt}</code></em></small>'
+            if not _is_missing_date(dt) else ''
+        )
+
     content = content.format(last_updated, **data)
 
     output_dir = os.path.join(base_path, 'docs', 'microsoft_edge')
     os.makedirs(output_dir, exist_ok=True)
-    
     with open(os.path.join(output_dir, 'latest_versions.md'), 'w', encoding='utf-8') as f:
         f.write(content)
 

@@ -33,8 +33,10 @@ def get_chrome_data(xml_path):
             f'{channel}/version',
             f'{channel}/{"latest" if channel == "stable" else channel}_download'
         )
+        release_time = read_chrome_xml_value(xml_path, f'{channel}/release_time')
         data[f'{channel}_version'] = version
         data[f'{channel}_download'] = download
+        data[f'{channel}_release_time'] = release_time
     
     return data
 
@@ -48,6 +50,13 @@ def get_last_updated(xml_path):
     except Exception as e:
         print(f"Error getting last_updated: {str(e)}")
         return "N/A"
+
+def _is_missing_release_time(value: str) -> bool:
+    """Check if release time is missing"""
+    if not value:
+        return True
+    v = value.strip()
+    return v == "" or v == "N/A" or v.startswith("Error")
 
 def generate_chrome_markdown():
     base_path = os.path.dirname(os.path.dirname(__file__))
@@ -69,10 +78,10 @@ lastUpdated: false
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
-| **Chrome** <br><a href="https://chromereleases.googleblog.com/" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{stable_version}` | `com.google.Chrome` | <a href="{stable_download}"><img src="/images/chrome.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Beta</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Beta%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{beta_version}` | `com.google.Chrome.beta` | <a href="{beta_download}"><img src="/images/chrome_beta.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Dev</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Dev%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{dev_version}` | `com.google.Chrome.dev` | <a href="{dev_download}"><img src="/images/chrome_dev.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Canary</sup> | `{canary_version}` | `com.google.Chrome.canary` | <a href="{canary_download}"><img src="/images/chrome_canary.png" alt="Download Chrome" width="80"></a> |
+| **Chrome** <br><a href="https://chromereleases.googleblog.com/" style="text-decoration: none;"><small>_Release Notes_</small></a>{stable_release_date_block} | `{stable_version}` | `com.google.Chrome` | <a href="{stable_download}"><img src="/images/chrome.png" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Beta</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Beta%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a>{beta_release_date_block} | `{beta_version}` | `com.google.Chrome.beta` | <a href="{beta_download}"><img src="/images/chrome_beta.png" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Dev</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Dev%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a>{dev_release_date_block} | `{dev_version}` | `com.google.Chrome.dev` | <a href="{dev_download}"><img src="/images/chrome_dev.png" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Canary</sup>{canary_release_date_block} | `{canary_version}` | `com.google.Chrome.canary` | <a href="{canary_download}"><img src="/images/chrome_canary.png" alt="Download Chrome" width="80"></a> |
 
 ---
 
@@ -90,6 +99,14 @@ View your current browser policies and explore available policy options:
 
     # Get data for each channel
     data = get_chrome_data(xml_path)
+
+    # Build per-channel release date blocks under the link (hide when missing)
+    for channel in ['stable', 'beta', 'dev', 'canary']:
+        rt = data.get(f'{channel}_release_time')
+        data[f'{channel}_release_date_block'] = (
+            f'<br><br><small>Release Date:<br><em><code>{rt}</code></em></small>'
+            if not _is_missing_release_time(rt) else ''
+        )
     
     # Format content with XML last_updated and channel data
     content = content.format(last_updated, **data)
