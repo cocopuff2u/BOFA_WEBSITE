@@ -21,17 +21,24 @@ def get_firefox_data(xml_path):
     try:
         tree = ET.parse(xml_path)
         root = tree.getroot()
-        package = root.find('package')
         
+        stable = root.find('stable')
+        beta = root.find('beta')
+        dev = root.find('dev')
+        esr = root.find('esr')
+        nightly = root.find('nightly')
+
         return {
-            'release_version': package.find('latest_version').text,
-            'release_download': package.find('latest_download').text,
-            'beta_version': package.find('latest_devel_version').text,
-            'beta_download': package.find('latest_beta_download').text,
-            'developer_version': package.find('devedition_version').text,
-            'developer_download': package.find('devedition_download').text,
-            'nightly_version': package.find('nightly_version').text,
-            'nightly_download': package.find('nightly_download').text
+            'release_version': stable.find('version').text,
+            'release_download': stable.find('download').text,
+            'beta_version': beta.find('version').text,
+            'beta_download': beta.find('download').text,
+            'developer_version': dev.find('version').text,
+            'developer_download': dev.find('download').text,
+            'esr_version': esr.find('version').text,
+            'esr_download': esr.find('download').text,
+            'nightly_version': nightly.find('version').text,
+            'nightly_download': nightly.find('download').text
         }
     except Exception as e:
         print(f"Error getting Firefox data: {str(e)}")
@@ -42,6 +49,8 @@ def get_firefox_data(xml_path):
             'beta_download': '#',
             'developer_version': 'N/A',
             'developer_download': '#',
+            'esr_version': 'N/A',
+            'esr_download': '#',
             'nightly_version': 'N/A',
             'nightly_download': '#'
         }
@@ -77,6 +86,7 @@ lastUpdated: false
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
 | **Firefox** <br><a href="https://www.mozilla.org/en-US/firefox/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{release_version}` | `org.mozilla.firefox` | <a href="{release_download}"><img src="/images/firefox.png" alt="Download Firefox" width="80"></a> |
+| **Firefox** <sup>ESR</sup> <br><a href="https://www.mozilla.org/en-US/firefox/organizations/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{esr_version}` | `org.mozilla.firefoxesr` | <a href="{esr_download}"><img src="/images/firefox.png" alt="Download Firefox ESR" width="80"></a> |
 | **Firefox** <sup>Beta</sup> <br><a href="https://www.mozilla.org/en-US/firefox/beta/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{beta_version}` | `org.mozilla.firefoxbeta` | <a href="{beta_download}"><img src="/images/firefox.png" alt="Download Firefox Beta" width="80"></a> |
 | **Firefox** <sup>Developer</sup> <br><a href="https://www.mozilla.org/en-US/firefox/developer/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{developer_version}` | `org.mozilla.firefox.dev` | <a href="{developer_download}"><img src="/images/firefox_developer.png" alt="Download Firefox Dev" width="80"></a> |
 | **Firefox** <sup>Nightly</sup> | `{nightly_version}` | `org.mozilla.nightly` | <a href="{nightly_download}"><img src="/images/firefox_nightly.png" alt="Download Firefox Nightly" width="80"></a> |
