@@ -31,28 +31,38 @@ def get_firefox_data(xml_path):
         return {
             'release_version': stable.find('version').text,
             'release_download': stable.find('download').text,
+            'release_time': stable.find('release_time').text,
             'beta_version': beta.find('version').text,
             'beta_download': beta.find('download').text,
+            'beta_time': beta.find('release_time').text,
             'developer_version': dev.find('version').text,
             'developer_download': dev.find('download').text,
+            'developer_time': dev.find('release_time').text,
             'esr_version': esr.find('version').text,
             'esr_download': esr.find('download').text,
+            'esr_time': esr.find('release_time').text,
             'nightly_version': nightly.find('version').text,
-            'nightly_download': nightly.find('download').text
+            'nightly_download': nightly.find('download').text,
+            'nightly_time': nightly.find('release_time').text
         }
     except Exception as e:
         print(f"Error getting Firefox data: {str(e)}")
         return {
             'release_version': 'N/A',
             'release_download': '#',
+            'release_time': 'N/A',
             'beta_version': 'N/A',
             'beta_download': '#',
+            'beta_time': 'N/A',
             'developer_version': 'N/A',
             'developer_download': '#',
+            'developer_time': 'N/A',
             'esr_version': 'N/A',
             'esr_download': '#',
+            'esr_time': 'N/A',
             'nightly_version': 'N/A',
-            'nightly_download': '#'
+            'nightly_download': '#',
+            'nightly_time': 'N/A'
         }
 
 def get_last_updated(xml_path):
@@ -65,6 +75,13 @@ def get_last_updated(xml_path):
     except Exception as e:
         print(f"Error getting last_updated: {str(e)}")
         return "N/A"
+
+def _is_missing_release_time(value: str) -> bool:
+    """Check if release time is missing"""
+    if not value:
+        return True
+    v = value.strip()
+    return v == "" or v == "N/A" or v.startswith("Error")
 
 def generate_firefox_markdown():
     base_path = os.path.dirname(os.path.dirname(__file__))
@@ -85,11 +102,11 @@ lastUpdated: false
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
-| **Firefox** <br><a href="https://www.mozilla.org/en-US/firefox/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{release_version}` | `org.mozilla.firefox` | <a href="{release_download}"><img src="/images/firefox.png" alt="Download Firefox" width="80"></a> |
-| **Firefox** <sup>ESR</sup> <br><a href="https://www.mozilla.org/en-US/firefox/organizations/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{esr_version}` | `org.mozilla.firefoxesr` | <a href="{esr_download}"><img src="/images/firefox.png" alt="Download Firefox ESR" width="80"></a> |
-| **Firefox** <sup>Beta</sup> <br><a href="https://www.mozilla.org/en-US/firefox/beta/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{beta_version}` | `org.mozilla.firefoxbeta` | <a href="{beta_download}"><img src="/images/firefox.png" alt="Download Firefox Beta" width="80"></a> |
-| **Firefox** <sup>Developer</sup> <br><a href="https://www.mozilla.org/en-US/firefox/developer/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a> | `{developer_version}` | `org.mozilla.firefox.dev` | <a href="{developer_download}"><img src="/images/firefox_developer.png" alt="Download Firefox Dev" width="80"></a> |
-| **Firefox** <sup>Nightly</sup> | `{nightly_version}` | `org.mozilla.nightly` | <a href="{nightly_download}"><img src="/images/firefox_nightly.png" alt="Download Firefox Nightly" width="80"></a> |
+| **Firefox** <br><a href="https://www.mozilla.org/en-US/firefox/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{release_date_block} | `{release_version}` | `org.mozilla.firefox` | <a href="{release_download}"><img src="/images/firefox.png" alt="Download Firefox" width="80"></a> |
+| **Firefox** <sup>ESR</sup> <br><a href="https://www.mozilla.org/en-US/firefox/organizations/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{esr_date_block} | `{esr_version}` | `org.mozilla.firefoxesr` | <a href="{esr_download}"><img src="/images/firefox.png" alt="Download Firefox ESR" width="80"></a> |
+| **Firefox** <sup>Beta</sup> <br><a href="https://www.mozilla.org/en-US/firefox/beta/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{beta_date_block} | `{beta_version}` | `org.mozilla.firefoxbeta` | <a href="{beta_download}"><img src="/images/firefox.png" alt="Download Firefox Beta" width="80"></a> |
+| **Firefox** <sup>Developer</sup> <br><a href="https://www.mozilla.org/en-US/firefox/developer/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{developer_date_block} | `{developer_version}` | `org.mozilla.firefox.dev` | <a href="{developer_download}"><img src="/images/firefox_developer.png" alt="Download Firefox Dev" width="80"></a> |
+| **Firefox** <sup>Nightly</sup>{nightly_date_block} | `{nightly_version}` | `org.mozilla.nightly` | <a href="{nightly_download}"><img src="/images/firefox_nightly.png" alt="Download Firefox Nightly" width="80"></a> |
 
 ---
 
@@ -106,6 +123,15 @@ View your current browser policies and explore available policy options:
 """
 
     data = get_firefox_data(xml_path)
+
+    # Build per-channel release date blocks under the link (hide when missing)
+    for channel in ['release', 'esr', 'beta', 'developer', 'nightly']:
+        rt = data.get(f'{channel}_time')
+        data[f'{channel}_date_block'] = (
+            f'<br><br><small>Release Date:<br><em><code>{rt}</code></em></small>'
+            if not _is_missing_release_time(rt) else ''
+        )
+    
     content = content.format(last_updated, **data)
 
     output_dir = os.path.join(base_path, 'docs', 'mozilla_firefox')
