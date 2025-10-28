@@ -25,17 +25,14 @@ def fetch_chrome_details(xml_path, version_path, download_path):
 def get_chrome_data(xml_path):
     """Get all Chrome channel data"""
     data = {}
-    channels = ['stable', 'beta', 'dev', 'canary', 'extended']
+    channels = ['stable', 'beta', 'dev', 'canary', 'extended', 'canary_asan']
     
     for channel in channels:
-        version, download = fetch_chrome_details(
-            xml_path,
-            f'{channel}/version',
-            f'{channel}/{"latest" if channel == "stable" else channel}_download'
-        )
-        release_time = read_chrome_xml_value(xml_path, f'{channel}/release_time')
+        version = read_chrome_xml_value(xml_path, f'{channel}/version')
+        download = read_chrome_xml_value(xml_path, f'{channel}/download_link')
         data[f'{channel}_version'] = version
         data[f'{channel}_download'] = download
+        release_time = read_chrome_xml_value(xml_path, f'{channel}/release_time')
         data[f'{channel}_release_time'] = release_time
     
     return data
@@ -83,6 +80,7 @@ lastUpdated: false
 | **Chrome** <sup>Beta</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Beta%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a>{beta_release_date_block} | `{beta_version}` | `com.google.Chrome.beta` | <a href="{beta_download}"><img src="/images/chrome_beta.png" alt="Download Chrome" width="80"></a> |
 | **Chrome** <sup>Dev</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Dev%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a>{dev_release_date_block} | `{dev_version}` | `com.google.Chrome.dev` | <a href="{dev_download}"><img src="/images/chrome_dev.png" alt="Download Chrome" width="80"></a> |
 | **Chrome** <sup>Canary</sup>{canary_release_date_block} | `{canary_version}` | `com.google.Chrome.canary` | <a href="{canary_download}"><img src="/images/chrome_canary.png" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Canary ASAN</sup>{canary_asan_release_date_block} | `{canary_asan_version}` | `com.google.Chrome.canary` | <a href="{canary_asan_download}"><img src="/images/chrome_canary.png" alt="Download Chrome ASAN" width="80"></a> |
 
 ---
 
@@ -102,7 +100,7 @@ View your current browser policies and explore available policy options:
     data = get_chrome_data(xml_path)
 
     # Build per-channel release date blocks under the link (hide when missing)
-    for channel in ['stable', 'beta', 'dev', 'canary', 'extended']:
+    for channel in ['stable', 'beta', 'dev', 'canary', 'extended', 'canary_asan']:
         rt = data.get(f'{channel}_release_time')
         data[f'{channel}_release_date_block'] = (
             f'<br><br><small>Release Date:<br><em><code>{rt}</code></em></small>'
