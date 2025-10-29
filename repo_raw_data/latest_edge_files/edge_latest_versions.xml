@@ -1,6 +1,10 @@
 <?xml version="1.0" ?>
 <EdgeInsiderVersions>
+<<<<<<< Updated upstream
   <last_updated>October 29, 2025 11:04 AM EDT</last_updated>
+=======
+  <last_updated>October 29, 2025 10:04 AM EDT</last_updated>
+>>>>>>> Stashed changes
   <Version>
     <Channel>current</Channel>
     <Date>October 25, 2025 06:48 AM EDT</Date>

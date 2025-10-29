@@ -1,5 +1,9 @@
 safari_versions:
+<<<<<<< Updated upstream
   last_updated: October 29, 2025 11:04 AM EDT
+=======
+  last_updated: October 29, 2025 10:10 AM EDT
+>>>>>>> Stashed changes
   Safari_Technology_Preview:
   - macos: Tahoe
     version: '230'
