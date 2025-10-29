@@ -1,10 +1,6 @@
 <?xml version="1.0" ?>
 <safari_versions>
-<<<<<<< Updated upstream
   <last_updated>October 29, 2025 11:04 AM EDT</last_updated>
-=======
-  <last_updated>October 29, 2025 10:10 AM EDT</last_updated>
->>>>>>> Stashed changes
   <release>
     <os>BigSur</os>
     <version>16.6.1</version>
