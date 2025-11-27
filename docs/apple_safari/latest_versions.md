@@ -7,7 +7,7 @@ lastUpdated: false
 
 <span class="extra-small">Safari comes pre-installed with macOS. Different versions are available for different macOS versions.</span>
 
-<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">November 26, 2025 05:03 PM EST</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.json) (Automatically Updated every hour)_</span>
+<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">November 26, 2025 06:03 PM EST</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.json) (Automatically Updated every hour)_</span>
 
 | **Browser** | **Version** | **CFBundle Identifier** | **Release Notes** |
 |------------|-------------------|---------------------|------------|
