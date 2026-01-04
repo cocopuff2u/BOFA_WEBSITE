@@ -95,16 +95,76 @@ lastUpdated: false
 
 ---
 
+# Silent Installation
+
+Install Edge silently via Terminal:
+
+```bash
+# Download and install latest stable Edge (Universal - Intel & Apple Silicon)
+curl -L -o MicrosoftEdge.pkg "https://go.microsoft.com/fwlink/?linkid=2093504"
+sudo installer -pkg MicrosoftEdge.pkg -target /
+```
+
+---
+
 # Browser Settings Management
 
 View your current browser policies and explore available policy options:
 
 ### <img src="/images/edge.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Microsoft Edge
 1. **View Current Policies**: Enter `edge://policy` in your address bar to see active policies
-2. **Available Options**: [Microsoft Edge Enterprise Documentation](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies)
+2. **Available Options**: [Microsoft Edge Policy Documentation](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies)
+
+> [!TIP]
+> **Recommended:** It is advised to manage Edge policies via MDM configuration profiles using the `com.microsoft.Edge` preference domain (case-sensitive).
+
+### Common Configuration Keys
+
+| Key | Type | Description |
+|-----|------|-------------|
+| `HomepageLocation` | String | Sets the default homepage URL |
+| `RestoreOnStartup` | Integer | Controls startup behavior (4=URLs, 5=new tab) |
+| `FavoritesBarEnabled` | Boolean | Show/hide the favorites bar |
+| `PasswordManagerEnabled` | Boolean | Enable/disable password manager |
+| `DefaultSearchProviderEnabled` | Boolean | Enable default search provider |
+| `EdgeCollectionsEnabled` | Boolean | Enable/disable Collections feature |
+| `HubsSidebarEnabled` | Boolean | Enable/disable sidebar |
+
+---
+
+# Useful Commands
+
+```bash
+# Get installed Edge version
+defaults read /Applications/Microsoft\\ Edge.app/Contents/Info.plist CFBundleShortVersionString
+
+# View Edge policies via Terminal (note: case-sensitive)
+defaults read com.microsoft.Edge
+
+# Clear Edge cache (both locations)
+rm -rf ~/Library/Caches/Microsoft\\ Edge
+rm -rf ~/Library/Application\\ Support/Microsoft\\ Edge/Default/Cache
+
+# Clear Edge cookies
+rm -rf ~/Library/Application\\ Support/Microsoft\\ Edge/Default/Cookies
+
+# Reset Edge to defaults (caution: removes all user data)
+rm -rf ~/Library/Application\\ Support/Microsoft\\ Edge
+rm -rf ~/Library/Caches/Microsoft\\ Edge
+```
+
+---
+
+# Additional Resources
+
+- **Release Notes RSS**: [Edge Release Notes RSS](https://github.com/cocopuff2u/BOFA/blob/main/latest_edge_files/edge_rss.xml)
+- **Security Updates**: [Edge Security Updates](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security)
+- **Enterprise Documentation**: [Microsoft Edge Enterprise Docs](https://learn.microsoft.com/en-us/deployedge/)
+- **Enterprise Download**: [Edge for Business Download](https://www.microsoft.com/en-us/edge/business/download)
+- **AutoPkg Recipe**: [MicrosoftEdge](https://github.com/autopkg/n8felton-recipes/tree/master/Microsoft)
 
 > [!IMPORTANT]
-> This page is fully automated and updated through a script. To modify the content, the script itself must be updated. The information presented here is generated automatically based on the most recent data available from Microsoft. Please note that it may not always reflect complete accuracy. To access and edit the scripts, please visit the [scripts folder here](https://github.com/cocopuff2u/MOFA_WEBSITE/tree/main/update_readme_scripts).
+> This page is fully automated and updated through a script. To modify the content, the script itself must be updated. The information presented here is generated automatically based on the most recent data available from Microsoft. Please note that it may not always reflect complete accuracy. To access and edit the scripts, please visit the [scripts folder here](https://github.com/cocopuff2u/BOFA_WEBSITE/tree/main/update_readme_scripts).
 """
 
     data = get_edge_data(xml_path)

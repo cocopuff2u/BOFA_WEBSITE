@@ -216,16 +216,91 @@ lastUpdated: false
 
 ---
 
+# Safari Updates
+
+Safari is updated through macOS Software Update. Unlike other browsers, Safari cannot be installed standalone:
+
+```bash
+# Check for available macOS/Safari updates
+softwareupdate --list
+
+# Install all available updates (including Safari)
+sudo softwareupdate --install --all
+
+# Install Safari Technology Preview (if downloaded)
+hdiutil attach SafariTechnologyPreview.dmg
+sudo installer -pkg /Volumes/Safari\\ Technology\\ Preview/Safari\\ Technology\\ Preview.pkg -target /
+hdiutil detach /Volumes/Safari\\ Technology\\ Preview
+```
+
+---
+
 # Browser Settings Management
 
 View your current browser policies and explore available policy options:
 
 ### <img src="/images/safari.webp" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Safari
 1. **View Current Policies**: Use Terminal: `sudo profiles show -type configuration`
-2. **Available Options**: [Safari MDM Settings Documentation](https://support.apple.com/guide/mdm/safari-settings-mdm0780042d4/web)
+2. **Available Options**: [Apple Platform Deployment](https://support.apple.com/guide/deployment/)
+
+> [!TIP]
+> **Recommended:** It is advised to manage Safari settings via MDM configuration profiles using the `com.apple.Safari` preference domain.
+
+### Example MDM Configuration Profile Keys
+
+| Key | Type | Description |
+|-----|------|-------------|
+| `HomePage` | String | Sets the default homepage URL |
+| `NewWindowBehavior` | Integer | Controls new window (0=Homepage, 1=Empty, 2=Same Page, 3=Bookmarks) |
+| `NewTabBehavior` | Integer | Controls new tab (0=Homepage, 1=Empty, 2=Same Page, 3=Bookmarks) |
+| `AutoFillPasswords` | Boolean | Enable/disable password autofill |
+| `AutoFillCreditCardData` | Boolean | Enable/disable credit card autofill |
+| `WebKitJavaScriptEnabled` | Boolean | Enable/disable JavaScript |
+| `SafariAllowPopups` | Boolean | Allow/block popup windows |
+| `ExtensionsEnabled` | Boolean | Enable/disable Safari extensions |
+
+---
+
+# Useful Commands
+
+```bash
+# Get installed Safari version
+defaults read /Applications/Safari.app/Contents/Info.plist CFBundleShortVersionString
+
+# Get Safari build version
+defaults read /Applications/Safari.app/Contents/Info.plist CFBundleVersion
+
+# View Safari preferences
+defaults read com.apple.Safari
+
+# Clear Safari cache (macOS 10.14 Mojave and newer)
+rm -rf ~/Library/Containers/com.apple.Safari/Data/Library/Caches
+
+# Clear Safari cache (legacy location for older macOS)
+rm -rf ~/Library/Caches/com.apple.Safari
+
+# Clear Safari history (requires closing Safari first)
+rm -rf ~/Library/Safari/History.db*
+
+# Reset Safari to defaults (caution: removes all user data)
+rm -rf ~/Library/Safari
+rm -rf ~/Library/Containers/com.apple.Safari
+rm -rf ~/Library/Caches/com.apple.Safari
+rm -rf ~/Library/Cookies/com.apple.Safari.cookies
+```
+
+---
+
+# Additional Resources
+
+- **Version History**: [Safari Version History](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_all_history.xml)
+- **Security Updates**: [Apple Security Updates](https://support.apple.com/en-us/HT201222)
+- **Safari Release Notes**: [Safari Release Notes](https://developer.apple.com/documentation/safari-release-notes)
+- **Developer Documentation**: [Safari Developer Resources](https://developer.apple.com/safari/)
+- **MDM Payload Reference**: [Apple Platform Deployment](https://support.apple.com/guide/deployment/)
 
 > [!IMPORTANT]
-> This page is fully automated and updated through a script. To modify the content, the script itself must be updated. The information presented here is generated automatically based on the most recent data available from Apple. Please note that it may not always reflect complete accuracy. To access and edit the scripts, please visit the [scripts folder here](https://github.com/cocopuff2u/MOFA_WEBSITE/tree/main/update_readme_scripts).
+> This page is fully automated and updated through a script. To modify the content, the script itself must be updated. The information presented here is generated automatically based on the most recent data available from Apple. Please note that it may not always reflect complete accuracy. To access and edit the scripts, please visit the [scripts folder here](https://github.com/cocopuff2u/BOFA_WEBSITE/tree/main/update_readme_scripts).
 """
 
     output_dir = os.path.join(base_path, 'docs', 'apple_safari')

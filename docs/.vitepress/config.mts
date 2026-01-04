@@ -6,6 +6,15 @@ export default defineConfig({
   description: "Browser Overview Feed for Apple",
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'BOFA - Browser Overview Feed for Apple' }],
+    ['meta', { property: 'og:description', content: 'Empowering Mac administrators with up-to-date browser version information for Apple devices' }],
+    ['meta', { property: 'og:image', content: 'https://mofa.cocolabs.dev/images/bofa_logo.png' }],
+    ['meta', { property: 'og:url', content: 'https://mofa.cocolabs.dev' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'BOFA - Browser Overview Feed for Apple' }],
+    ['meta', { name: 'twitter:description', content: 'Empowering Mac administrators with up-to-date browser version information for Apple devices' }],
+    ['meta', { name: 'twitter:image', content: 'https://mofa.cocolabs.dev/images/bofa_logo.png' }],
     ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-RQKDJ66BMC' }],
     ['script', {}, `
       window.dataLayer = window.dataLayer || [];
@@ -41,22 +50,22 @@ export default defineConfig({
       {
         text: '<img src="/images/chrome.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Google Chrome',
         items: [
-          { text: 'Latest Versions', link: '/google_chrome/latest_versions'}]
+          { text: 'Overview', link: '/google_chrome/latest_versions'}]
       },
       {
         text: '<img src="/images/firefox.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Mozilla Firefox',
         items: [
-          { text: 'Latest Versions', link: '/mozilla_firefox/latest_versions'}]
+          { text: 'Overview', link: '/mozilla_firefox/latest_versions'}]
       },
       {
         text: '<img src="/images/edge.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Microsoft Edge',
         items: [
-          { text: 'Latest Versions', link: '/microsoft_edge/latest_versions'}]
+          { text: 'Overview', link: '/microsoft_edge/latest_versions'}]
       },
       {
         text: '<img src="/images/safari.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Apple Safari',
         items: [
-          { text: 'Latest Versions', link: '/apple_safari/latest_versions'}]
+          { text: 'Overview', link: '/apple_safari/latest_versions'}]
       },
       {
         text: 'ℹ️ About & Support',
@@ -76,7 +85,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025 BOFA All rights reserved.'
+      copyright: 'Copyright © 2026 BOFA All rights reserved.'
     },
     markdown: {
       // Ensure HTML is enabled in markdown options

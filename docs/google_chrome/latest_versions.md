@@ -20,6 +20,18 @@ lastUpdated: false
 
 ---
 
+# Silent Installation
+
+Install Chrome silently via Terminal:
+
+```bash
+# Download and install latest stable Chrome (Universal - Intel & Apple Silicon)
+curl -L -o GoogleChrome.pkg "https://dl.google.com/dl/chrome/mac/universal/stable/gcem/GoogleChrome.pkg"
+sudo installer -pkg GoogleChrome.pkg -target /
+```
+
+---
+
 # Browser Settings Management
 
 View your current browser policies and explore available policy options:
@@ -28,5 +40,49 @@ View your current browser policies and explore available policy options:
 1. **View Current Policies**: Enter `chrome://policy` in your address bar to see active policies
 2. **Available Options**: [Chrome Enterprise Policy Documentation](https://chromeenterprise.google/policies/)
 
+### Common Configuration Keys
+
+| Key | Type | Description |
+|-----|------|-------------|
+| `HomepageLocation` | String | Sets the default homepage URL |
+| `RestoreOnStartup` | Integer | Controls startup behavior (1=restore, 4=URLs, 5=new tab) |
+| `BookmarkBarEnabled` | Boolean | Show/hide the bookmark bar |
+| `PasswordManagerEnabled` | Boolean | Enable/disable password manager |
+| `DefaultSearchProviderEnabled` | Boolean | Enable default search provider |
+| `AutofillAddressEnabled` | Boolean | Enable address autofill |
+| `TranslateEnabled` | Boolean | Enable translation prompts |
+
+---
+
+# Useful Commands
+
+```bash
+# Get installed Chrome version
+defaults read /Applications/Google\ Chrome.app/Contents/Info.plist CFBundleShortVersionString
+
+# View Chrome policies via Terminal
+defaults read com.google.Chrome
+
+# Clear Chrome cache (both locations)
+rm -rf ~/Library/Caches/Google/Chrome
+rm -rf ~/Library/Application\ Support/Google/Chrome/Default/Cache
+
+# Clear Chrome cookies
+rm -rf ~/Library/Application\ Support/Google/Chrome/Default/Cookies
+
+# Reset Chrome to defaults (caution: removes all user data)
+rm -rf ~/Library/Application\ Support/Google/Chrome
+rm -rf ~/Library/Caches/Google/Chrome
+```
+
+---
+
+# Additional Resources
+
+- **Version History**: [Chrome Stable Version History](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_stable_history.xml)
+- **Security Advisories**: [Chrome Security Blog](https://chromereleases.googleblog.com/search/label/Stable%20updates)
+- **Enterprise Bundle**: [Chrome Enterprise Download](https://chromeenterprise.google/browser/download/)
+- **AutoPkg Recipe**: [com.google.Chrome](https://github.com/autopkg/recipes/tree/master/GoogleChrome)
+
 > [!IMPORTANT]
-> This page is fully automated and updated through a script. To modify the content, the script itself must be updated. The information presented here is generated automatically based on the most recent data available from Google. Please note that it may not always reflect complete accuracy. To access and edit the scripts, please visit the [scripts folder here](https://github.com/cocopuff2u/MOFA_WEBSITE/tree/main/update_readme_scripts).
+> This page is fully automated and updated through a script. To modify the content, the script itself must be updated. The information presented here is generated automatically based on the most recent data available from Google. Please note that it may not always reflect complete accuracy. To access and edit the scripts, please visit the [scripts folder here](https://github.com/cocopuff2u/BOFA_WEBSITE/tree/main/update_readme_scripts).

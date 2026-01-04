@@ -1,8 +1,18 @@
 {
+  "name": "bofa-website",
+  "version": "1.0.0",
+  "description": "Browser Overview Feed for Apple - A resource hub for Mac administrators managing browser applications",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "vitepress": "^1.5.0"
   },
   "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"

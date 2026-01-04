@@ -1,4 +1,4 @@
-# 📖 About <span class="gradient-title">BOFA</span> (Microsoft Overview Feed for Apple)
+# 📖 About <span class="gradient-title">BOFA</span> (Browser Overview Feed for Apple)
 
 <span class="gradient-title">BOFA</span> is a **comprehensive resource hub** for **Mac administrators** who manage **browser applications** on **Apple devices**. Built with simplicity and automation in mind, <span class="gradient-title">BOFA</span> is your go-to tool for staying up-to-date with vendor offerings and streamlining the deployment and management of browsers on MacOS.
 
@@ -46,13 +46,3 @@ We also maintain a separate repository for the <span class="gradient-title">BOFA
 - **Enhance Documentation:** Help make <span class="gradient-title">BOFA</span> and its resources even more accessible by improving documentation.
 
 Your contributions help ensure that <span class="gradient-title">BOFA</span> remains accurate, up-to-date, and a valuable resource for **Mac admins** worldwide. Join us in our mission to bridge the gap between **Browsers** and **Apple ecosystems**, and improve workflows for IT professionals.
-
----
-
-### Changes Made:
-1. **Clarified Data and Tools Focus:** The content now emphasizes that <span class="gradient-title">BOFA</span> provides **automatically updated data** in formats like **XML**, **JSON**, and **YAML**, directly reflecting Microsoft's offerings.
-2. **Simplified Mission and Value Statements:** The mission and values are more focused on making it easy for **Mac admins** to access the tools and resources they need, without complex processes or searching.
-3. **Emphasized Automation and Accessibility:** The project’s core features highlight how <span class="gradient-title">BOFA</span> automates updates and simplifies workflows, ensuring that **Mac admins** can access tools quickly and efficiently.
-4. **Clear Contribution Guidelines:** The contribution section is more explicit about how users can contribute to the project and help keep it updated.
-
-This version aligns more closely with your project’s goals and emphasizes the core aspects: providing **automated, up-to-date tools and data** for **Mac admins** managing **Browser products on Apple devices**. Let me know if you'd like to tweak anything further!

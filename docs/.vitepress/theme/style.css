@@ -142,14 +142,12 @@
  * Component: Custom Font Color
  * -------------------------------------------------------------------------- */
 
-.custom-color {
-  color: #ff5733; /* Replace with your desired color */
-}
-
 .gradient-title {
-  background: -webkit-linear-gradient(120deg, #FF9C6D 20%, #4682B4);
+  color: #4682B4; /* Fallback for browsers without webkit support */
   font-weight: bold;
+  background: linear-gradient(120deg, #FF9C6D 20%, #4682B4);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -198,4 +196,124 @@
   width: 50%;
   margin: 0 auto;
   font-size: 0.8rem;
+}
+
+/**
+ * Component: Home Page Custom Styles
+ * -------------------------------------------------------------------------- */
+
+.glow-star {
+  animation: glow 1s infinite alternate;
+  filter: drop-shadow(0 0 10px #ffd700);
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 10px #ffd700);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px #ffd700);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px #ffd700);
+  }
+}
+
+.title-effect {
+  color: #007BFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.title-effect:hover {
+  transform: scale(1.1);
+}
+
+.home-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.hero-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  margin: 5px auto 20px;
+}
+
+.hero-section {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-section h3 {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+.hero-section ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+.hero-section a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.community-section {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.community-section h2 {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.community-section p {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.star-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.star-section p {
+  margin-bottom: 10px;
+}
+
+.star-badge {
+  display: inline-flex;
+  text-align: center;
+  padding: 5px;
+}
+
+.star-badge img {
+  transform: scale(1.5);
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .hero-columns {
+    flex-direction: column;
+  }
 }
