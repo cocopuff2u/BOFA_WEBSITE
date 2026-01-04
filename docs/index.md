@@ -7,7 +7,7 @@ hero:
   text: "Browser Overview Feed For Apple"
   tagline: "Empowering Apple Devices with Browser Solutions"
   image:
-    src: /images/bofa_logo.png
+    src: /images/bofa_logo.webp
     alt: BOFA Logo
   actions:
     - theme: brand

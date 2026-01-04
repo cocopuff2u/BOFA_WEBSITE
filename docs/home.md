@@ -17,7 +17,7 @@
     ">
     </div>
     <!-- Image -->
-    <img src="/images/bofa_logo.png" alt="BOFA Logo" style="max-width: 150px; z-index: 1;" />
+    <img src="/images/bofa_logo.webp" alt="BOFA Logo" style="max-width: 150px; z-index: 1;" />
   </div>
 
   <p><strong>Browser Overview Feed for Apple</strong></p>

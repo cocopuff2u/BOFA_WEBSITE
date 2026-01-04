@@ -3,7 +3,7 @@ editLink: false
 lastUpdated: false
 ---
 
-# <img src="/images/firefox.png" style="height: 40px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Firefox Browser Versions
+# <img src="/images/firefox.webp" style="height: 40px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Firefox Browser Versions
 
 <span class="extra-small">All links below direct to the official browser vendor. The links provided will always download the latest available version as of the last scan update.</span>
 
@@ -11,11 +11,11 @@ lastUpdated: false
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
-| **Firefox** <br><a href="https://www.mozilla.org/en-US/firefox/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 18, 2025 12:00 AM EST</code></em></small> | `146.0.1` | `org.mozilla.firefox` | <a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/146.0.1/mac/en-US/Firefox%20146.0.1.pkg"><img src="/images/firefox.png" alt="Download Firefox" width="80"></a> |
-| **Firefox** <sup>ESR</sup> <br><a href="https://www.mozilla.org/en-US/firefox/organizations/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 09, 2025 12:00 AM EST</code></em></small> | `140.6.0` | `org.mozilla.firefoxesr` | <a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/140.6.0esr/mac/en-US/Firefox%20140.6.0esr.pkg"><img src="/images/firefox.png" alt="Download Firefox ESR" width="80"></a> |
-| **Firefox** <sup>Beta</sup> <br><a href="https://www.mozilla.org/en-US/firefox/beta/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 31, 2025 12:00 AM EST</code></em></small> | `147.0b9` | `org.mozilla.firefoxbeta` | <a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/147.0b9/mac/en-US/Firefox%20147.0b9.pkg"><img src="/images/firefox.png" alt="Download Firefox Beta" width="80"></a> |
-| **Firefox** <sup>Developer</sup> <br><a href="https://www.mozilla.org/en-US/firefox/developer/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 31, 2025 12:00 AM EST</code></em></small> | `147.0b9` | `org.mozilla.firefox.dev` | <a href="https://download-installer.cdn.mozilla.net/pub/devedition/releases/147.0b9/mac/en-US/Firefox%20147.0b9.dmg"><img src="/images/firefox_developer.png" alt="Download Firefox Dev" width="80"></a> |
-| **Firefox** <sup>Nightly</sup><br><br><small>Release Date:<br><em><code>December 08, 2025 12:00 AM EST</code></em></small> | `148.0a1` | `org.mozilla.nightly` | <a href="https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/firefox-148.0a1.en-US.mac.pkg"><img src="/images/firefox_nightly.png" alt="Download Firefox Nightly" width="80"></a> |
+| **Firefox** <br><a href="https://www.mozilla.org/en-US/firefox/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 18, 2025 12:00 AM EST</code></em></small> | `146.0.1` | `org.mozilla.firefox` | <a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/146.0.1/mac/en-US/Firefox%20146.0.1.pkg"><img src="/images/firefox.webp" alt="Download Firefox" width="80"></a> |
+| **Firefox** <sup>ESR</sup> <br><a href="https://www.mozilla.org/en-US/firefox/organizations/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 09, 2025 12:00 AM EST</code></em></small> | `140.6.0` | `org.mozilla.firefoxesr` | <a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/140.6.0esr/mac/en-US/Firefox%20140.6.0esr.pkg"><img src="/images/firefox.webp" alt="Download Firefox ESR" width="80"></a> |
+| **Firefox** <sup>Beta</sup> <br><a href="https://www.mozilla.org/en-US/firefox/beta/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 31, 2025 12:00 AM EST</code></em></small> | `147.0b9` | `org.mozilla.firefoxbeta` | <a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/147.0b9/mac/en-US/Firefox%20147.0b9.pkg"><img src="/images/firefox.webp" alt="Download Firefox Beta" width="80"></a> |
+| **Firefox** <sup>Developer</sup> <br><a href="https://www.mozilla.org/en-US/firefox/developer/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 31, 2025 12:00 AM EST</code></em></small> | `147.0b9` | `org.mozilla.firefox.dev` | <a href="https://download-installer.cdn.mozilla.net/pub/devedition/releases/147.0b9/mac/en-US/Firefox%20147.0b9.dmg"><img src="/images/firefox_developer.webp" alt="Download Firefox Dev" width="80"></a> |
+| **Firefox** <sup>Nightly</sup><br><br><small>Release Date:<br><em><code>December 08, 2025 12:00 AM EST</code></em></small> | `148.0a1` | `org.mozilla.nightly` | <a href="https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/firefox-148.0a1.en-US.mac.pkg"><img src="/images/firefox_nightly.webp" alt="Download Firefox Nightly" width="80"></a> |
 
 ---
 
@@ -41,7 +41,7 @@ hdiutil detach "/Volumes/Firefox" -quiet
 
 View your current browser policies and explore available policy options:
 
-### <img src="/images/firefox.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Firefox
+### <img src="/images/firefox.webp" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Firefox
 1. **View Current Policies**: Enter `about:policies` in your address bar to see active policies
 2. **Available Options**: [Firefox Enterprise Policy Documentation](https://mozilla.github.io/policy-templates/)
 

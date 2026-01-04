@@ -67,7 +67,7 @@ editLink: false
 lastUpdated: false
 ---
 
-# <img src="/images/chrome.png" style="height: 40px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Chrome Browser Versions
+# <img src="/images/chrome.webp" style="height: 40px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Chrome Browser Versions
 
 <span class="extra-small">All links below direct to the official browser vendor. The links provided will always download the latest available version as of the last scan update.</span>
 
@@ -75,12 +75,12 @@ lastUpdated: false
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
-| **Chrome** <br><a href="https://chromereleases.googleblog.com/" style="text-decoration: none;"><small>_Release Notes_</small></a>{stable_release_date_block} | `{stable_version}` | `com.google.Chrome` | <a href="{stable_download}"><img src="/images/chrome.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Extended Stable</sup> <br>_<sup>Requires `TargetChannel` policy; link is for Stable.</sup>_<br>{extended_release_date_block} | `{extended_version}` | `com.google.Chrome` | <a href="{extended_download}"><img src="/images/chrome.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Beta</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Beta%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a>{beta_release_date_block} | `{beta_version}` | `com.google.Chrome.beta` | <a href="{beta_download}"><img src="/images/chrome_beta.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Dev</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Dev%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a>{dev_release_date_block} | `{dev_version}` | `com.google.Chrome.dev` | <a href="{dev_download}"><img src="/images/chrome_dev.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Canary</sup>{canary_release_date_block} | `{canary_version}` | `com.google.Chrome.canary` | <a href="{canary_download}"><img src="/images/chrome_canary.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Canary ASAN</sup>{canary_asan_release_date_block} | `{canary_asan_version}` | `com.google.Chrome.canary` | <a href="{canary_asan_download}"><img src="/images/chrome_canary.png" alt="Download Chrome ASAN" width="80"></a> |
+| **Chrome** <br><a href="https://chromereleases.googleblog.com/" style="text-decoration: none;"><small>_Release Notes_</small></a>{stable_release_date_block} | `{stable_version}` | `com.google.Chrome` | <a href="{stable_download}"><img src="/images/chrome.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Extended Stable</sup> <br>_<sup>Requires `TargetChannel` policy; link is for Stable.</sup>_<br>{extended_release_date_block} | `{extended_version}` | `com.google.Chrome` | <a href="{extended_download}"><img src="/images/chrome.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Beta</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Beta%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a>{beta_release_date_block} | `{beta_version}` | `com.google.Chrome.beta` | <a href="{beta_download}"><img src="/images/chrome_beta.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Dev</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Dev%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a>{dev_release_date_block} | `{dev_version}` | `com.google.Chrome.dev` | <a href="{dev_download}"><img src="/images/chrome_dev.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Canary</sup>{canary_release_date_block} | `{canary_version}` | `com.google.Chrome.canary` | <a href="{canary_download}"><img src="/images/chrome_canary.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Canary ASAN</sup>{canary_asan_release_date_block} | `{canary_asan_version}` | `com.google.Chrome.canary` | <a href="{canary_asan_download}"><img src="/images/chrome_canary.webp" alt="Download Chrome ASAN" width="80"></a> |
 
 ---
 
@@ -100,7 +100,7 @@ sudo installer -pkg GoogleChrome.pkg -target /
 
 View your current browser policies and explore available policy options:
 
-### <img src="/images/chrome.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Chrome
+### <img src="/images/chrome.webp" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Chrome
 1. **View Current Policies**: Enter `chrome://policy` in your address bar to see active policies
 2. **Available Options**: [Chrome Enterprise Policy Documentation](https://chromeenterprise.google/policies/)
 

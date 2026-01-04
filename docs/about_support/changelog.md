@@ -18,6 +18,7 @@ Welcome to the Changelog! Stay updated on the latest features, fixes, and improv
 - Added mobile responsive layout for homepage
 
 #### Improvements
+- Converted all images to WebP format for faster page loads
 - Verified and fixed all download URLs, cache paths, and resource links
 - Updated all browser pages with accurate macOS-specific information
 - Improved GitHub Actions workflow (faster, no empty commits)

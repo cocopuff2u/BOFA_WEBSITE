@@ -33,7 +33,7 @@ export default defineConfig({
       pattern: 'https://github.com/cocopuff2u/BOFA_website/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
-    logo: '/images/bofa_logo.png',
+    logo: '/images/bofa_logo.webp',
     nav: [
       { text: 'Get Started', link: '/home' },
       { text: 'Google Chrome', link: '/google_chrome/latest_versions' },
@@ -48,22 +48,22 @@ export default defineConfig({
       ]
       },
       {
-        text: '<img src="/images/chrome.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Google Chrome',
+        text: '<img src="/images/chrome.webp" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Google Chrome',
         items: [
           { text: 'Overview', link: '/google_chrome/latest_versions'}]
       },
       {
-        text: '<img src="/images/firefox.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Mozilla Firefox',
+        text: '<img src="/images/firefox.webp" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Mozilla Firefox',
         items: [
           { text: 'Overview', link: '/mozilla_firefox/latest_versions'}]
       },
       {
-        text: '<img src="/images/edge.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Microsoft Edge',
+        text: '<img src="/images/edge.webp" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Microsoft Edge',
         items: [
           { text: 'Overview', link: '/microsoft_edge/latest_versions'}]
       },
       {
-        text: '<img src="/images/safari.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Apple Safari',
+        text: '<img src="/images/safari.webp" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Apple Safari',
         items: [
           { text: 'Overview', link: '/apple_safari/latest_versions'}]
       },

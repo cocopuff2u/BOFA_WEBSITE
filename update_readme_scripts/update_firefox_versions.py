@@ -94,7 +94,7 @@ editLink: false
 lastUpdated: false
 ---
 
-# <img src="/images/firefox.png" style="height: 40px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Firefox Browser Versions
+# <img src="/images/firefox.webp" style="height: 40px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Firefox Browser Versions
 
 <span class="extra-small">All links below direct to the official browser vendor. The links provided will always download the latest available version as of the last scan update.</span>
 
@@ -102,11 +102,11 @@ lastUpdated: false
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
-| **Firefox** <br><a href="https://www.mozilla.org/en-US/firefox/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{release_date_block} | `{release_version}` | `org.mozilla.firefox` | <a href="{release_download}"><img src="/images/firefox.png" alt="Download Firefox" width="80"></a> |
-| **Firefox** <sup>ESR</sup> <br><a href="https://www.mozilla.org/en-US/firefox/organizations/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{esr_date_block} | `{esr_version}` | `org.mozilla.firefoxesr` | <a href="{esr_download}"><img src="/images/firefox.png" alt="Download Firefox ESR" width="80"></a> |
-| **Firefox** <sup>Beta</sup> <br><a href="https://www.mozilla.org/en-US/firefox/beta/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{beta_date_block} | `{beta_version}` | `org.mozilla.firefoxbeta` | <a href="{beta_download}"><img src="/images/firefox.png" alt="Download Firefox Beta" width="80"></a> |
-| **Firefox** <sup>Developer</sup> <br><a href="https://www.mozilla.org/en-US/firefox/developer/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{developer_date_block} | `{developer_version}` | `org.mozilla.firefox.dev` | <a href="{developer_download}"><img src="/images/firefox_developer.png" alt="Download Firefox Dev" width="80"></a> |
-| **Firefox** <sup>Nightly</sup>{nightly_date_block} | `{nightly_version}` | `org.mozilla.nightly` | <a href="{nightly_download}"><img src="/images/firefox_nightly.png" alt="Download Firefox Nightly" width="80"></a> |
+| **Firefox** <br><a href="https://www.mozilla.org/en-US/firefox/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{release_date_block} | `{release_version}` | `org.mozilla.firefox` | <a href="{release_download}"><img src="/images/firefox.webp" alt="Download Firefox" width="80"></a> |
+| **Firefox** <sup>ESR</sup> <br><a href="https://www.mozilla.org/en-US/firefox/organizations/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{esr_date_block} | `{esr_version}` | `org.mozilla.firefoxesr` | <a href="{esr_download}"><img src="/images/firefox.webp" alt="Download Firefox ESR" width="80"></a> |
+| **Firefox** <sup>Beta</sup> <br><a href="https://www.mozilla.org/en-US/firefox/beta/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{beta_date_block} | `{beta_version}` | `org.mozilla.firefoxbeta` | <a href="{beta_download}"><img src="/images/firefox.webp" alt="Download Firefox Beta" width="80"></a> |
+| **Firefox** <sup>Developer</sup> <br><a href="https://www.mozilla.org/en-US/firefox/developer/notes/" style="text-decoration: none;"><small>_Release Notes_</small></a>{developer_date_block} | `{developer_version}` | `org.mozilla.firefox.dev` | <a href="{developer_download}"><img src="/images/firefox_developer.webp" alt="Download Firefox Dev" width="80"></a> |
+| **Firefox** <sup>Nightly</sup>{nightly_date_block} | `{nightly_version}` | `org.mozilla.nightly` | <a href="{nightly_download}"><img src="/images/firefox_nightly.webp" alt="Download Firefox Nightly" width="80"></a> |
 
 ---
 
@@ -132,7 +132,7 @@ hdiutil detach "/Volumes/Firefox" -quiet
 
 View your current browser policies and explore available policy options:
 
-### <img src="/images/firefox.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Firefox
+### <img src="/images/firefox.webp" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Firefox
 1. **View Current Policies**: Enter `about:policies` in your address bar to see active policies
 2. **Available Options**: [Firefox Enterprise Policy Documentation](https://mozilla.github.io/policy-templates/)
 

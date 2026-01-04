@@ -3,7 +3,7 @@ editLink: false
 lastUpdated: false
 ---
 
-# <img src="/images/chrome.png" style="height: 40px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Chrome Browser Versions
+# <img src="/images/chrome.webp" style="height: 40px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Chrome Browser Versions
 
 <span class="extra-small">All links below direct to the official browser vendor. The links provided will always download the latest available version as of the last scan update.</span>
 
@@ -11,12 +11,12 @@ lastUpdated: false
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
-| **Chrome** <br><a href="https://chromereleases.googleblog.com/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 22, 2025 07:32 PM EST</code></em></small> | `143.0.7499.170` | `com.google.Chrome` | <a href="https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg"><img src="/images/chrome.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Extended Stable</sup> <br>_<sup>Requires `TargetChannel` policy; link is for Stable.</sup>_<br><br><br><small>Release Date:<br><em><code>December 18, 2025 07:56 PM EST</code></em></small> | `142.0.7444.243` | `com.google.Chrome` | <a href="https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg"><img src="/images/chrome.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Beta</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Beta%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 17, 2025 02:00 PM EST</code></em></small> | `144.0.7559.31` | `com.google.Chrome.beta` | <a href="https://dl.google.com/chrome/mac/beta/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg"><img src="/images/chrome_beta.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Dev</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Dev%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 22, 2025 07:42 PM EST</code></em></small> | `145.0.7587.4` | `com.google.Chrome.dev` | <a href="https://dl.google.com/chrome/mac/universal/dev/googlechromedev.dmg"><img src="/images/chrome_dev.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Canary</sup><br><br><small>Release Date:<br><em><code>January 03, 2026 07:42 PM EST</code></em></small> | `145.0.7615.0` | `com.google.Chrome.canary` | <a href="https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"><img src="/images/chrome_canary.png" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Canary ASAN</sup><br><br><small>Release Date:<br><em><code>January 04, 2026 10:24 AM EST</code></em></small> | `145.0.7615.2` | `com.google.Chrome.canary` | <a href="https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"><img src="/images/chrome_canary.png" alt="Download Chrome ASAN" width="80"></a> |
+| **Chrome** <br><a href="https://chromereleases.googleblog.com/" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 22, 2025 07:32 PM EST</code></em></small> | `143.0.7499.170` | `com.google.Chrome` | <a href="https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg"><img src="/images/chrome.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Extended Stable</sup> <br>_<sup>Requires `TargetChannel` policy; link is for Stable.</sup>_<br><br><br><small>Release Date:<br><em><code>December 18, 2025 07:56 PM EST</code></em></small> | `142.0.7444.243` | `com.google.Chrome` | <a href="https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg"><img src="/images/chrome.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Beta</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Beta%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 17, 2025 02:00 PM EST</code></em></small> | `144.0.7559.31` | `com.google.Chrome.beta` | <a href="https://dl.google.com/chrome/mac/beta/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg"><img src="/images/chrome_beta.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Dev</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Dev%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>December 22, 2025 07:42 PM EST</code></em></small> | `145.0.7587.4` | `com.google.Chrome.dev` | <a href="https://dl.google.com/chrome/mac/universal/dev/googlechromedev.dmg"><img src="/images/chrome_dev.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Canary</sup><br><br><small>Release Date:<br><em><code>January 03, 2026 07:42 PM EST</code></em></small> | `145.0.7615.0` | `com.google.Chrome.canary` | <a href="https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"><img src="/images/chrome_canary.webp" alt="Download Chrome" width="80"></a> |
+| **Chrome** <sup>Canary ASAN</sup><br><br><small>Release Date:<br><em><code>January 04, 2026 10:24 AM EST</code></em></small> | `145.0.7615.2` | `com.google.Chrome.canary` | <a href="https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"><img src="/images/chrome_canary.webp" alt="Download Chrome ASAN" width="80"></a> |
 
 ---
 
@@ -36,7 +36,7 @@ sudo installer -pkg GoogleChrome.pkg -target /
 
 View your current browser policies and explore available policy options:
 
-### <img src="/images/chrome.png" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Chrome
+### <img src="/images/chrome.webp" style="height: 20px; display: inline-block; margin-right: 4px; vertical-align: text-bottom;"> Chrome
 1. **View Current Policies**: Enter `chrome://policy` in your address bar to see active policies
 2. **Available Options**: [Chrome Enterprise Policy Documentation](https://chromeenterprise.google/policies/)
 
