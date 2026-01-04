@@ -38,7 +38,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Needed for VitePress lastUpdated feature
+          fetch-depth: 1
           fetch-tags: false
       # - uses: pnpm/action-setup@v3 # Uncomment this block if you're using pnpm
       #   with:

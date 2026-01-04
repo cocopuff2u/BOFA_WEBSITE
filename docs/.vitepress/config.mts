@@ -24,7 +24,7 @@ export default defineConfig({
     `]
   ],
   themeConfig: {
-    lastUpdated: true,
+    lastUpdated: false,
     cleanUrls: true,
     search: {
       provider: 'local'
