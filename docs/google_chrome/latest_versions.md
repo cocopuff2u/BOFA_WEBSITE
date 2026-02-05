@@ -7,7 +7,7 @@ lastUpdated: false
 
 <span class="extra-small">All links below direct to the official browser vendor. The links provided will always download the latest available version as of the last scan update.</span>
 
-<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">February 04, 2026 06:05 PM EST</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.json) (Automatically Updated every hour)_</span>
+<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">February 04, 2026 07:18 PM EST</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_chrome_files/chrome_latest_versions.json) (Automatically Updated every hour)_</span>
 
 | **Browser** | **CFBundle Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
@@ -16,7 +16,7 @@ lastUpdated: false
 | **Chrome** <sup>Beta</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Beta%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>February 04, 2026 05:30 PM EST</code></em></small> | `145.0.7632.45` | `com.google.Chrome.beta` | <a href="https://dl.google.com/chrome/mac/beta/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg"><img src="/images/chrome_beta.webp" alt="Download Chrome" width="80"></a> |
 | **Chrome** <sup>Dev</sup> <br><a href="https://chromereleases.googleblog.com/search/label/Dev%20updates" style="text-decoration: none;"><small>_Release Notes_</small></a><br><br><small>Release Date:<br><em><code>January 29, 2026 06:56 PM EST</code></em></small> | `146.0.7655.0` | `com.google.Chrome.dev` | <a href="https://dl.google.com/chrome/mac/universal/dev/googlechromedev.dmg"><img src="/images/chrome_dev.webp" alt="Download Chrome" width="80"></a> |
 | **Chrome** <sup>Canary</sup><br><br><small>Release Date:<br><em><code>February 04, 2026 09:39 PM EST</code></em></small> | `146.0.7669.0` | `com.google.Chrome.canary` | <a href="https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"><img src="/images/chrome_canary.webp" alt="Download Chrome" width="80"></a> |
-| **Chrome** <sup>Canary ASAN</sup><br><br><small>Release Date:<br><em><code>February 04, 2026 12:09 PM EST</code></em></small> | `146.0.7668.2` | `com.google.Chrome.canary` | <a href="https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"><img src="/images/chrome_canary.webp" alt="Download Chrome ASAN" width="80"></a> |
+| **Chrome** <sup>Canary ASAN</sup><br><br><small>Release Date:<br><em><code>February 04, 2026 11:11 PM EST</code></em></small> | `146.0.7669.1` | `com.google.Chrome.canary` | <a href="https://dl.google.com/chrome/mac/universal/canary/googlechromecanary.dmg"><img src="/images/chrome_canary.webp" alt="Download Chrome ASAN" width="80"></a> |
 
 ---
 
