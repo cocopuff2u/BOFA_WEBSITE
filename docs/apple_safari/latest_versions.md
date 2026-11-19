@@ -7,7 +7,7 @@ lastUpdated: false
 
 <span class="extra-small">Safari comes pre-installed with macOS. Different versions are available for different macOS versions.</span>
 
-<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">November 18, 2026 05:26 PM EST</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.json) (Automatically Updated every hour)_</span>
+<span class="extra-small">_Last Updated: <code style="color : mediumseagreen">November 18, 2026 10:55 PM EST</code> [**_Raw XML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.xml) [**_Raw YAML_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.yaml) [**_Raw JSON_**](https://github.com/cocopuff2u/BOFA/blob/main/latest_safari_files/safari_latest_versions.json) (Automatically Updated every hour)_</span>
 
 | **Browser** | **Version** | **CFBundle Identifier** | **Release Notes** |
 |------------|-------------------|---------------------|------------|
@@ -27,8 +27,8 @@ lastUpdated: false
 
 | **Browser** | **Version** | **CFBundle Identifier** | **Download** |
 |------------|-------------------|---------------------|------------|
-| **Safari Technology Preview <sup>(27)</sup>**<br><small><a href="https://developer.apple.com/documentation/ios-ipados-release-notes">Release Notes</a></small> <br><br><b>Post Date:</b><br><em><code>November 4, 2026</code></em> | `1` | `com.apple.SafariTechnologyPreview` | <div align="center"><a href="https://secure-appldnld.apple.com/STP/142-53583-20261104-3efa3282-5778-498f-bf15-a17269776fe0/SafariTechPreview256.dmg"><img src="/images/safari_technology.webp" alt="Download Safari Technology Preview <sup>(27)</sup>" width="80"></a></div> |
-| **Safari Technology Preview <sup>(26)</sup>**<br><small><a href="https://developer.apple.com/documentation/ios-ipados-release-notes">Release Notes</a></small> <br><br><b>Post Date:</b><br><em><code>November 4, 2026</code></em> | `1` | `com.apple.SafariTechnologyPreview` | <div align="center"><a href="https://secure-appldnld.apple.com/STP/142-53570-20261104-0a424b2d-98ac-491c-9215-ddf803ed6253/SafariTechnologyPreview.dmg"><img src="/images/safari_technology.webp" alt="Download Safari Technology Preview <sup>(26)</sup>" width="80"></a></div> |
+| **Safari Technology Preview <sup>(27)</sup>**<br><small><a href="https://developer.apple.com/documentation/ios-ipados-release-notes">Release Notes</a></small> <br><br><b>Post Date:</b><br><em><code>November 18, 2026</code></em> | `1` | `com.apple.SafariTechnologyPreview` | <div align="center"><a href="https://secure-appldnld.apple.com/STP/142-68495-20261118-aa18e73c-a899-4615-a28a-eca5706c3f84/SafariTechnologyPreview.dmg"><img src="/images/safari_technology.webp" alt="Download Safari Technology Preview <sup>(27)</sup>" width="80"></a></div> |
+| **Safari Technology Preview <sup>(26)</sup>**<br><small><a href="https://developer.apple.com/documentation/ios-ipados-release-notes">Release Notes</a></small> <br><br><b>Post Date:</b><br><em><code>November 18, 2026</code></em> | `1` | `com.apple.SafariTechnologyPreview` | <div align="center"><a href="https://secure-appldnld.apple.com/STP/142-68493-20261118-77438b3b-e8e1-4c91-9f96-001cd5a98069/SafariTechnologyPreview.dmg"><img src="/images/safari_technology.webp" alt="Download Safari Technology Preview <sup>(26)</sup>" width="80"></a></div> |
 
 
 
